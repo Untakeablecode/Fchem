@@ -1,0 +1,81 @@
+<html>
+<!--<div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<a href="https://www.freepik.com/free-photos-vectors/paper">Paper vector created by macrovector - www.freepik.com</a>
+-->
+    
+<head>
+    
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <title>F-Chem</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://use.fontawesome.com/2fae5b48a1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    
+    <div class="containervideos">
+        <nav>
+        <div class="menu">
+            <ul>
+            <li><a class="link" href="index.html" style="color: whitesmoke;">- Return -</a></li>
+            <li></li>
+            <li class="currently animated bounceInDown
+">Currently in <span><q>Privacy</q></span></li>
+            </ul>
+        </div>
+            </nav>
+    </div>
+        
+    <div class="banner">
+        <p>Umm this page is currently in development... due to time constraints.</p>
+        </div>
+    
+    <div id="footer">
+            <div id="footer-links">
+            <ul>    
+            <li><a class="flink" href="about.html">About</a></li>
+            <li><a class="flink" href="help.html">Help</a></li>
+            <li><a class="flink" href="topics.html">Topics</a></li>
+            <li><a style="cursor: none;">-</a></li>
+            </ul>
+        </div>
+        <p style="float: right; color: #475C5A; margin-top: .5%">Copyright © 2020 Christopher A.</p>
+    </div>
+    
+        <script type="text/javascript">
+        
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+            
+            function myFunction() {
+  
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+            
+</script> 
+</body>
+</html>

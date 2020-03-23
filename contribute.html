@@ -1,0 +1,116 @@
+<html>
+<!--<div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<a href="https://www.freepik.com/free-photos-vectors/paper">Paper vector created by macrovector - www.freepik.com</a>
+-->
+    
+<head>
+    
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <title>F-Chem</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://use.fontawesome.com/2fae5b48a1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    
+    <div class="containervideos">
+        <nav>
+        <div class="menu">
+            <ul>
+            <li class="navlogo"><img src="images/menu.png"></li>    
+            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link" href="videos.html">Videos</a></li>
+            <li><a class="link" href="practice.html">Practice</a></li>
+            <li><strike><abbr title="Not enough contributers to unlock, come back later.">Ranking</abbr></strike></li>
+            <li><a href="#" class="contact-btn"><span class="active">Contribute</span></a></li>
+            </ul>
+        </div>
+            </nav>
+    </div>
+        
+    <div class="banner">
+        <div class="main-text" style="width: 64%;">
+        
+            <h1 class="animated fadeIn slower">Share your instructional videos <hr>and/or<hr> practice problems.</h1>
+            
+            <div class="usaulstart-btn">
+                <a class="tablelink" href="#down">
+                <div class="usaulstart-btn-inner"><i class="fa fa-arrow-down"></i>
+                </div>
+                    </a>
+                <small><b>Scroll down</b></small>
+            </div>
+        </div>
+        <div class="contact-picture">
+            <img src="images/share.png">
+        </div>
+    </div>
+    
+    <div id="down" class="containervideos2">
+        <div class="averagevideo-text">
+        <h1 style="border-left: 200px solid; border-right: 200px solid;">Guidelines about contributing content.</h1>
+            <p>&nbsp</p>
+            <p class="guidelines">1. Only share content that you made.</p>
+            <p class="guidelines">2. Must answer responses in the pre-filled email.</p>
+            <p class="guidelines">3. If contributing a video, you must send a link to the video (preferably an unlisted Youtube link).</p>
+            <p class="guidelines">4. If contributing a worksheet and its answer key, you must send a link to the document (preferably a Google Drive link).</p>
+            <p class="guidelines">5. Content may be removed from the <q>content vault</q> at any time, if there is a senseless amount of data in a single topic.</p>
+            <p class="guidelines">6. If you have any questions, look in the <b>help page</b> of the site.</p>
+            <p>&nbsp</p>
+            <h2 class="contribute-subtitle">Thank you for taking the time to help out others!</h2>
+            <h2>⬇️</h2>
+            <h2 class="contribute-subtitle">Click on the button below to fill in a <br>pre-composed email.</h2>
+            <a href="mailto:hello@hello.com?subject='ENTER YOUR FULL NAME' - Fchemistry™ Request&body=Do you want your full name to be public with your post; showing your full name allows you to have a chance to be on the ranking leaderboard! (yes/no):%0D%0A%0D%0AWhat topic is your post:%0D%0A%0D%0ALink to your instructional video (if none leave it blank):%0D%0A%0D%0ALink to your worksheet document (if none leave it blank):%0D%0A%0D%0ASpecial notes or suggestions:" class="submit onhover" style="text-decoration: none; color: burlywood; margin-top: 10%;">Send Request.</a>
+        </div>
+    </div>
+        
+    
+    <div id="footer">
+            <div id="footer-links">
+            <ul>    
+            <li><a class="flink" href="about.html">About</a></li>
+            <li><a class="flink" href="help.html">Help</a></li>
+            <li><a class="flink" href="topics.html">Topics</a></li>
+            <li><a class="flink" href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+        <p style="float: right; color: #475C5A; margin-top: .5%">Copyright © 2020 Christopher A.</p>
+    </div>
+    
+        <script type="text/javascript">
+        
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+            
+            function myFunction() {
+  
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+            
+</script> 
+</body>
+</html>

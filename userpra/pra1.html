@@ -1,0 +1,140 @@
+<html>
+<!--<div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<a href="https://www.freepik.com/free-photos-vectors/paper">Paper vector created by macrovector - www.freepik.com</a>
+-->
+    
+<head>
+    
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <title>F-Chem - Practicing</title>
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">    
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://use.fontawesome.com/2fae5b48a1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    
+    <div class="containervideos">
+        <nav>
+        <div class="menu">
+            <ul>
+            <li class="navlogo"><img src="../images/menu.png"></li>   
+            <li></li>
+            <li class="active">Practice</li>
+            <li><a href="../practice.html" class="exit-btn"><span>Exit</span></a></li>
+            </ul>
+        </div>
+            </nav>
+    </div>
+        
+    <div class="banner">
+           <div class="question">
+        <h1>Solve the chemical equations:</h1>
+               <p><b>Type out the whole problem, following the layout of the questions.</b></p>
+        
+            <form id = "quiz" name = "quiz">
+
+<p class = "questions">Balance: 1KMnO4 + 1HCl = 1KCl + 1MnCl2 + 1H2O + 1Cl2</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">Balance: 1Fe + 1Cl2 = 1FeCl3</p>
+<input id = "textbox" type = "text" name = "question2">
+
+<p class = "questions">Balance: 1C6H5COOH + 1O2 = 1CO2 + 1H2O</p>
+<input id = "textbox" type = "text" name = "question3">
+
+<p class = "questions">Balance: HCl + Zn = H2 + ZnCl2O</p>
+<input placeholder="Do not include 'ones'" id = "textbox" type = "text" name = "question4">
+
+<p>___</p>
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+</form>      
+            
+        <div id = "after_submit">
+        <h2 id = "number_correct"></h2>
+            </div> 
+               
+        </div>
+        <button onclick="answers()">Show answer key</button>
+        <div id="answers" style="display: none;">
+        <h1>Answer Key:</h1>
+            <p>Q1: 2KMnO4 + 16HCl = 2KCl + 2MnCl2 + 8H2O + 5Cl2</p>
+            <p>Q2: 2Fe + 3Cl2 = 2FeCl3</p>
+            <p>Q3: 2C6H5COOH + 15O2 = 14CO2 + 6H2O</p>
+            <p>Q4: 2HCl + Zn = H2 + ZnCl2</p>
+        
+            </div>
+        </div> 
+    
+    
+    
+    <div id="footer">
+            <div id="footer-links">
+            <ul>    
+            <li><a class="flink" href="/about.html">About</a></li>
+            <li><a class="flink" href="/help.html">Help</a></li>
+            <li><a class="flink" href="/topics.html">Topics</a></li>
+            <li><a class="flink" href="/privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+        <p style="float: right; color: #475C5A; margin-top: .5%">Copyright © 2020 Christopher A.</p>
+    </div>
+    
+        <script type="text/javascript">
+        
+            function closeWin() {
+  myWindow.close();
+}
+            
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+         
+        function answers() {
+  var x = document.getElementById("answers");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    
+            
+function check(){
+
+	var question1 = document.quiz.question1.value;
+	var question2 = document.quiz.question2.value;
+	var question3 = document.quiz.question3.value;
+    var question4 = document.quiz.question4.value;
+	var correct = 0;
+
+
+	if (question1 == "2KMnO4 + 16HCl = 2KCl + 2MnCl2 + 8H2O + 5Cl2") {
+		correct++;
+}
+	if (question2 == "2Fe + 3Cl2 = 2FeCl3") {
+		correct++;
+}	
+	if (question3 == "2C6H5COOH + 15O2 = 14CO2 + 6H2O") {
+		correct++;
+	}
+    	if (question4 == "2HCl + Zn = H2 + ZnCl2") {
+		correct++;
+}	
+
+	document.getElementById("after_submit").style.visibility = "visible";
+
+	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct out of 4.";
+	}
+            
+</script> 
+</body>
+    <script>$(document).ready(function(){
+$(this).scrollTop(0);
+});</script>
+</html>
